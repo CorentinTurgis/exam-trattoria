@@ -1,0 +1,232 @@
+:root {
+    --trattoria-bg-light: #920304;
+    --trattoria-bg-dark: #540101;
+}
+
+@font-face {
+    font-family: 'pacifico';
+    src: url("assets/Pacifico.ttf");
+}
+
+.title {
+    font-family: 'pacifico', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+header, section, footer {
+    border: 1px black solid;
+}
+
+header {
+    background-color: var(--trattoria-bg-light);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5vw;
+    align-items: center;
+    color: white;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li a{
+    margin: 2vw;
+    text-decoration: none;
+    color: #EDCFCF;
+}
+
+.home {
+    background-image: url("assets/pizza.jpg");
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home h1 {
+    font-size: 3em;
+    color: white;
+}
+
+.home button {
+    width: 60%;
+    height: 40px;
+    background-color: var(--trattoria-bg-light);
+    color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 1.2em;
+}
+
+.menu {
+    width: calc(100% - 2px);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h2,.menu h3 {
+    color: #1D9C36;
+    font-size: 1.3em;
+}
+
+.menu h2{
+    align-self: center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container article {
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container article h3 {
+    align-self: center;
+}
+
+.menu-container article img {
+    width: 100%;
+}
+
+.menu-container article {
+    padding: 10px 10px 70px;
+}
+
+ul.menu-list {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    font-size: 1.7vw;
+    margin-bottom: 10px;
+}
+
+ul.menu-list li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . ";
+}
+
+ul.menu-list span:first-child {
+    padding-right: 0.33em;
+    background: white;
+}
+
+ul.menu-list span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white;
+}
+
+
+.services {
+    background-color: var(--trattoria-bg-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.services article img {
+    width: 36%;
+    margin-bottom: 10px;
+}
+
+.services article div {
+    width: 36%;
+    background-color: var(--trattoria-bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    color: rgba(255, 255, 255, 0.78);
+    text-align: center;
+}
+
+.services article {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2 {
+    color: #1D9C36;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+}
+
+.contact article {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.contact article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #1D9C36;
+    text-align: center;
+}
+
+.contact article div span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+}
+
+.contact article div span svg {
+    height: 100%;
+}
+
+.contact article {
+    width: 100%;
+}
+
+iframe {
+    width: 40%;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: var(--trattoria-bg-light);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
